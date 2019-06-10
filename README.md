@@ -6,7 +6,7 @@ LaTex Practise
 ## MyLeaflet
 ## My Settings
 - [Font](My_Settings/Font)
-  - [Accessible Font](My_Settings/Font/font4.pdf]
+  - [Accessible Font](My_Settings/Font/font4.pdf)
 - [Picture](My_Settings/Pic)
 - [Color](My_Settings/Color)
   - [HTML_Color](My_Settings/Color/HTML_color.pdf)

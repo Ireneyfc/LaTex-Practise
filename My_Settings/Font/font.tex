@@ -1,0 +1,109 @@
+
+\documentclass[12pt, a4paper]{article}
+\usepackage{fontspec, xunicode, xltxtra}  
+\usepackage{xeCJK}%中文字体
+\usepackage{fontspec}
+\usepackage[slantfont, boldfont]{xeCJK}
+\usepackage{CJKfntef}
+
+
+% 设置英文字体
+\setmainfont{Times New Roman}   %西文默认衬线字体(serif)
+\setsansfont{Arial}   %西文默认无衬线字体(sans serif)
+\setmonofont{Courier New}           %西文默认的等宽字体
+%分别对应\rmfamliy,\sffamily,\ttfamliy
+
+% 设置中文字体
+\setCJKmainfont[ItalicFont={楷体}, BoldFont={黑体}]{宋体}
+\setCJKsansfont{黑体}
+\setCJKmonofont{仿宋_GB2312}%中文等宽字体
+
+%-----------------------xeCJK下设置中文字体------------------------------%
+\setCJKfamilyfont{song}{SimSun}                             %宋体 song  
+\newcommand{\song}{\CJKfamily{song}}                        
+\setCJKfamilyfont{fs}{FangSong_GB2312}                      %仿宋2312 fs  
+\newcommand{\fs}{\CJKfamily{fs}}                            
+\setCJKfamilyfont{yh}{Microsoft YaHei UI}                    %微软雅黑 yh  
+\newcommand{\yh}{\CJKfamily{yh}}  
+\setCJKfamilyfont{hei}{SimHei}                              %黑体  hei  
+\newcommand{\hei}{\CJKfamily{hei}}    
+\setCJKfamilyfont{hwxh}{STXihei}                                %华文细黑  hwxh  
+\newcommand{\hwxh}{\CJKfamily{hwxh}}
+\setCJKfamilyfont{asong}{Adobe Song Std}                        %Adobe 宋体  asong  
+\newcommand{\asong}{\CJKfamily{asong}}
+\setCJKfamilyfont{ahei}{Adobe Heiti Std}                            %Adobe 黑体  ahei  
+\newcommand{\ahei}{\CJKfamily{ahei}}  
+\setCJKfamilyfont{akai}{Adobe Kaiti Std}                            %Adobe 楷体  akai  
+\newcommand{\akai}{\CJKfamily{akai}}
+\newfontfamily\ls{LiSu}                                            % 2.隶书 ls
+
+
+%------------------------------设置字体大小------------------------%  
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     %初号  
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont} %小初号  
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}      %一号  
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}      %二号  
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  %小二号  
+\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}  %三号  
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}       %四号  
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  %小四号  
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}    %五号  
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}   %小五号  
+\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}  %六号  
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}    %七号
+
+% 中文断行设置
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+\title{测试}
+\author{尹方晨}
+\date{2016年6月6日}
+\begin{document}
+\maketitle
+\begin{center}
+满纸荒唐言\\
+一把辛酸泪\\
+都云作者痴\\
+谁解其中味\\ 
+\end{center}
+\begin{verse}
+\texttt{Courier New\quad Stray birds of summer come to my window to sing and fly away}. \\
+\textsf{Arial\quad And yellow leaves of autumn, which have no songs}, \\
+\textrm{Times New Roman\quad flutter and fall there with a sign}.\\
+\hfill \emph{RabindranathTagore}
+\end{verse}
+\begin{verse}
+\texttt{夏天的飞鸟}，\textsf{飞到我的窗前唱歌}，\textrm{又飞去了}。\\
+秋天的黄叶，它们没有什么可唱，只叹息一声，飞落在那里。\\
+\hfill \emph{罗宾德拉纳特·泰戈尔}%\emph 命令表示强调，用于把直立体改为意大利体
+\end{verse}
+
+
+\underline{下划线强调}\\
+%对应的分别是下划线，双下划线，波浪线，划去线，着重点
+\uline{Fashion}\\
+\uuline{Fashion}\\
+\uwave{Fashion 黑}\\
+\sout{Fashion}\\
+\dotuline{Fashion }\\
+%注意：一般情况下中文英文的强调命令差别不大，但是着重点有区别
+\dotuline{大佬}\\
+\CJKunderdot{大佬}\\
+%常用的几个命令有\Huge,\huge,\LARGE,\large,\normalsize,\small,\tiny
+{\tiny Fashion}\quad {\normalsize Fashion} \quad {\huge Fashion}\\
+%如果我要修改的再细一点，那么我们可以选择命令\fontsize{}{}，第一个里面是字体的大小（默认单位pt，10pt是正常的默认字体大小），第二个里面是行距。
+%注意：字体大小与行距息息相关。对于英文文档类（如article）来说，行距默认是字体大小的1.2倍，对于中文来说则是1.56倍。
+
+罗宾德拉纳特·泰戈尔\\
+\song{song：罗宾德拉纳特·泰戈尔}\\
+\fs{fs:罗宾德拉纳特·泰戈尔}\\
+\yh{yh:罗宾德拉纳特·泰戈尔}\\
+\hei{hei:罗宾德拉纳特·泰戈尔}\\
+\hwxh{hwxh:罗宾德拉纳特·泰戈尔}\\
+\asong{asong:罗宾德拉纳特·泰戈尔}\\
+\ahei{ahei:罗宾德拉纳特·泰戈尔}\\
+\akai{akai:罗宾德拉纳特·泰戈尔}\\
+\akai{akai:罗宾德拉纳特·泰戈尔} \quad \ls{ls:罗宾德拉纳特·泰戈尔}\\
+
+\end{document}

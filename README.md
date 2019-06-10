@@ -4,3 +4,8 @@ LaTex Practise
 - Math
 - Physical
 ## MyLeaflet
+## My Settings
+- [Font](My_settins/Font)git
+- [Picture](My_settins/Pic)
+- [Color](My_settins/Color)
+  - [HTML_Color](My_settins/Color/HTML_color.pdf)

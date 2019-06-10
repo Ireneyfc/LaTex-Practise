@@ -5,7 +5,7 @@ LaTex Practise
 - Physical
 ## MyLeaflet
 ## My Settings
-- [Font](My_settins/Font)git
+- [Font](My_settins/Font)
 - [Picture](My_settins/Pic)
 - [Color](My_settins/Color)
   - [HTML_Color](My_settins/Color/HTML_color.pdf)
